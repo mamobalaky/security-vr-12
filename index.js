@@ -26,7 +26,7 @@ const Discord = require('discord.js')
 const cooldown = new Set();
 const cdtime = 10;
 
- const prefix = "h!";
+ const prefix = "!m";
 client.on("message", async message => {
   if (message.content.startsWith(prefix+"help")) {
    if (!message.channel.guild)
@@ -620,4 +620,4 @@ client.on('guildDelete', guild => {
 });
 
 
-client.login("");
+client.login("OTE2MjMzNTQwMTU5NTUzNjA2.YanK-g.t8jo8dt5EvzccHoPdjr86Ij828s");
