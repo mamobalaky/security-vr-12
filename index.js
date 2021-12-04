@@ -8,7 +8,7 @@ client.on("ready", async () => {
   console.log(`${client.guilds.cache.size} Servers .`);
   console.log(`${client.guilds.cache.reduce((a, g) => a + g.memberCount, 0)} Users .`);
  client.user.setStatus("invisible")
-  client.user.setActivity("h!help", {
+  client.user.setActivity("!mhelp", {
     type: "PLAYING"
   });
 });
@@ -26,7 +26,7 @@ const Discord = require('discord.js')
 const cooldown = new Set();
 const cdtime = 10;
 
- const prefix = "h!";
+ const prefix = "!m";
 client.on("message", async message => {
   if (message.content.startsWith(prefix+"help")) {
    if (!message.channel.guild)
@@ -620,4 +620,4 @@ client.on('guildDelete', guild => {
 });
 
 
-client.login("");
+client.login("OTE2NjExMDY5NTkyNjA4Nzg4.YasqlA.QhIW0KjtojI5iwmyuzFVcvwmkgc");
